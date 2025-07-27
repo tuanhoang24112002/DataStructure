@@ -1,0 +1,3 @@
+/mnt/d/DataStructure/SelfLearning/build/CMakeFiles/Executable.dir
+/mnt/d/DataStructure/SelfLearning/build/CMakeFiles/edit_cache.dir
+/mnt/d/DataStructure/SelfLearning/build/CMakeFiles/rebuild_cache.dir
