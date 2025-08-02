@@ -4,6 +4,7 @@
 using namespace std;
 
 int main() {
+    //hello
     Array arr = {{55, 10, 5, 20, 35}, 10, 5};
     cout << "This is the main function of the Array ADT project." << endl;
     append(arr, 15);
