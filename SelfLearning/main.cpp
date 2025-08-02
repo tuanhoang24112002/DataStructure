@@ -40,12 +40,10 @@ void count_odd(int startNum, int endNun)
 int main(){
     auto start = chrono::high_resolution_clock::now();
 
-    // thread t1(count_even, 1, 1000000);
-    // thread t2(count_odd, 1, 1000000);
-    // t1.join();
-    // t2.join();
-    count_even(1, 1000000);
-    count_odd(1, 1000000);
+    thread t1(count_even, 1, 1000000);
+    thread t2(count_odd, 1, 1000000);
+    t1.join();
+    t2.join();
 
     auto end = chrono::high_resolution_clock::now();
     chrono::duration<double> elapsed = end - start;
