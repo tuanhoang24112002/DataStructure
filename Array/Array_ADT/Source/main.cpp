@@ -6,8 +6,10 @@ using namespace std;
 int main() {
     Array arr = {{55, 10, 5, 20, 35}, 10, 5};
     cout << "This is the main function of the Array ADT project." << endl;
-    append(arr, 15);
-    append(arr, 14);
+    // append(arr, 15);
+    // append(arr, 14);
+    // insert(arr, 2, 69);
+    delete_element(arr, 3);
     display(arr);
     cout << arr.length << endl;
     return 0;
