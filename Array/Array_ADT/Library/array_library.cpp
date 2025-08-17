@@ -196,3 +196,14 @@ void insert_sorted(Array &arr, int value) {
     arr.A[i + 1] = value;
     arr.length++;
 }
+void left_shift(Array &arr) {
+    if (arr.length == 0) {
+        cout << "Array is empty, cannot perform left shift." << endl;
+        return;
+    }
+    for (int i=0; i < arr.length - 1; i++){
+        arr.A[i] = arr.A[i + 1];
+    }
+    arr.length--;
+    arr.A[arr.length-1] = 0; // Optional: Set the last element to
+}

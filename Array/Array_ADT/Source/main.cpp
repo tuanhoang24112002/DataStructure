@@ -26,8 +26,10 @@ int main() {
     // } else {
     //     cout << "The array is not sorted." << endl;
     // }
-    // return 0;
-    insert_sorted(arr, 7);
-    cout << "After inserting 7 in sorted order: ";
+    // insert_sorted(arr, 7);
+    // cout << "After inserting 7 in sorted order: ";
+    left_shift(arr);
+    cout << "After left shifting: ";
     display(arr);
+    return 0;
 }
