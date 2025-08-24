@@ -25,3 +25,4 @@ void Reverse2(Array &array);
 bool is_sorted(Array arr);
 void insert_sorted(Array &arr, int value);
 void left_shift(Array &arr);
+Array* merge(Array &arr1, Array &arr2);

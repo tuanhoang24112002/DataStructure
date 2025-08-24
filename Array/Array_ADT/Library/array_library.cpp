@@ -207,3 +207,26 @@ void left_shift(Array &arr) {
     arr.length--;
     arr.A[arr.length-1] = 0; // Optional: Set the last element to
 }
+
+Array* merge(Array &arr1, Array &arr2)
+{
+    Array *arr3 = new Array();
+    arr3->size = arr1.size + arr2.size;
+    arr3->length = arr1.length + arr2.length;
+    int i = 0, j = 0, k = 0;
+    while(i<arr1.length && j < arr2.length) {
+        if(arr1.A[i] < arr2.A[j]) {
+            arr3->A[k++] = arr1.A[i++];
+        } else {
+            arr3->A[k++] = arr2.A[j++];
+        }
+    }
+    for(; i < arr1.length; i++) {
+        arr3->A[k++] = arr1.A[i];
+    }
+    for (; j < arr2.length; j++) {
+        arr3->A[k++] = arr2.A[j];
+    }
+    return arr3;
+}
+
