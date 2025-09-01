@@ -26,3 +26,6 @@ bool is_sorted(Array arr);
 void insert_sorted(Array &arr, int value);
 void left_shift(Array &arr);
 Array* merge(Array &arr1, Array &arr2);
+Array* union_arrays(Array &arr1, Array &arr2);
+Array* intersection_arrays(Array &arr1, Array &arr2);
+Array* difference_arrays(Array &arr1, Array &arr2);

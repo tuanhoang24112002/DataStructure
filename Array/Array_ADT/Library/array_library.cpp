@@ -230,3 +230,72 @@ Array* merge(Array &arr1, Array &arr2)
     return arr3;
 }
 
+Array* union_arrays(Array &arr1, Array &arr2){
+    Array *arr3 = new Array();
+    arr3->size = arr1.size + arr2.size;
+    int i = 0, j = 0, k = 0;
+    while (i < arr1.length && j <arr2.length){
+        if(arr1.A[i] < arr2.A[j]){
+            arr3->A[k++] = arr1.A[i++];
+        }
+        else if(arr2.A[j] < arr1.A[i]){
+            arr3->A[k++] = arr2.A[j++];
+        }
+        else{
+            arr3->A[k++] = arr1.A[i++];
+            j++;
+        }
+    }
+    for(; i < arr1.length; i++){
+        arr3->A[k++] = arr1.A[i];
+    }
+    for(; j < arr2.length; j++){
+        arr3->A[k++] = arr2.A[j];
+    }
+    arr3->length = k;
+    return arr3;
+}
+
+Array* intersection_arrays(Array &arr1, Array &arr2){
+    Array *arr3 = new Array();
+    arr3->size = arr1.size + arr2.size;
+    int i = 0, j = 0, k = 0;
+    while (i < arr1.length && j < arr2.length){
+        if(arr1.A[i] < arr2.A[j]){
+            i++;
+        }
+        else if(arr2.A[j] < arr1.A[i]){
+            j++;
+        }
+        else{
+            arr3->A[k++] = arr1.A[i++];
+            j++;
+        }
+    }
+    arr3->length = k;
+    return arr3;
+}
+
+Array* difference_arrays(Array &arr1, Array &arr2){
+    Array *arr3 = new Array();
+    arr3->size = arr1.size + arr2.size;
+    int i = 0, j = 0, k = 0;
+    while(i<arr1.length && j < arr2.length){
+        if(arr1.A[i] < arr2.A[j]){
+            arr3->A[k++] = arr1.A[i++];
+        }
+        else if(arr2.A[j] < arr1.A[i]){
+            j++;
+        }
+        else{
+            i++;
+            j++;
+        }
+    }
+    for(; i < arr1.length; i++){
+        arr3->A[k++] = arr1.A[i];
+    }
+    arr3->length = k;
+    return arr3;
+}
+

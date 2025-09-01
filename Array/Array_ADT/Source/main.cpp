@@ -4,8 +4,8 @@
 using namespace std;
 
 int main() {
-    Array arr1 = {{1,3,5,7,9}, 10, 5};
-    Array arr2 = {{2,4,6,8,10}, 10, 5};
+    Array arr1 = {{3,4,5,6,10}, 10, 5};
+    Array arr2 = {{2,4,5,7,12}, 10, 5};
     Array *arr3;
     cout << "This is the main function of the Array ADT project." << endl;
     // append(arr, 15);
@@ -32,7 +32,7 @@ int main() {
     // cout << "After inserting 7 in sorted order: ";
     // left_shift(arr);
     // cout << "After left shifting: ";
-    arr3 = merge(arr1, arr2);
+    arr3 = difference_arrays(arr1, arr2);
     display(*arr3);
     delete arr3; // Free the allocated memory
     return 0;
