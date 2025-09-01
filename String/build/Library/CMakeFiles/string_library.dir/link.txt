@@ -1,0 +1,2 @@
+/usr/bin/ar qc libstring_library.a CMakeFiles/string_library.dir/string_lib.cpp.o
+/usr/bin/ranlib libstring_library.a

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/string_program.dir/main.cpp.o -o string_program  ../Library/libstring_library.a 

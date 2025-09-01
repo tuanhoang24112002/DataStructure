@@ -1,0 +1,8 @@
+/mnt/d/DataStructure/String/build/CMakeFiles/edit_cache.dir
+/mnt/d/DataStructure/String/build/CMakeFiles/rebuild_cache.dir
+/mnt/d/DataStructure/String/build/Source/CMakeFiles/string_program.dir
+/mnt/d/DataStructure/String/build/Source/CMakeFiles/edit_cache.dir
+/mnt/d/DataStructure/String/build/Source/CMakeFiles/rebuild_cache.dir
+/mnt/d/DataStructure/String/build/Library/CMakeFiles/string_library.dir
+/mnt/d/DataStructure/String/build/Library/CMakeFiles/edit_cache.dir
+/mnt/d/DataStructure/String/build/Library/CMakeFiles/rebuild_cache.dir
